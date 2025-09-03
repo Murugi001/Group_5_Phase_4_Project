@@ -1,9 +1,9 @@
-# From Tweets to Strategy: Predicting Sentiment and Shaping Customer Engagement  
+# PROJECT OVERVIEW
+# FROM TWEETS TO STRATEGY: PREDICTING SENTIMENT AND SHARING CUSTOMER ENGAGEMENT  
 
-## 📌 Project Overview  
-In the current digital landscape, social media platforms such as **X (formerly Twitter)** have become powerful spaces where consumers express their opinions, experiences, and perceptions about brands and products.  
-
-This project leverages sentiment analysis to transform unstructured Twitter data into actionable insights for two of the world’s most influential technology brands: **Apple** and **Google**.  
+## 📌 Business Understanding
+In the current digital landscape, social media platforms such as **X (Formerly Twitter)**  have become powerful spaces where consumers express their opinions, experiences, and perceptions about brands and products. These online conversations offer organizations a valuable opportunity to measure customer sentiment, evaluate brand perception, and shape strategies that drive competitive advantage. 
+The project, “From Tweets to Strategy: Predicting Sentiment and Shaping Customer Engagement,” is motivated by the need for businesses to translate unstructured social media data into actionable insights.  
 
 ---
 
@@ -20,24 +20,28 @@ This project leverages sentiment analysis to transform unstructured Twitter data
 ## 👥 Target Audience  
 - **Marketing Teams** (Apple & Google) → Design campaigns that amplify positive sentiment.  
 - **Customer Engagement & Experience Managers** → Strengthen relationships and improve satisfaction.  
-- **Product Managers** (iPhone, Pixel, Android, iOS) → Align features with consumer expectations.  
-- **Competitive Strategy Analysts** → Benchmark brand perception across categories.  
-- **Executives & Senior Leadership** → Use sentiment-driven insights for strategic planning.  
+- **Product Managers** (iPhone, Pixel, Android, iOS) → Align features with consumer expectations revealed in sentiment analysis.  
+- **Competitive Strategy Analysts** → Benchmark brand perception across categories and identify opportunities for competitve advantage.  
+- **Executives & Senior Leadership** → Use sentiment-driven insights for strategic planning, market positioning and long term brand growth.  
+
+---
+
+## 📂Data Understanding
+- The dataset used in this project was sourced from Data World and contributed by Kent Cavender-Bares on August 30, 2013. It consists of 9,093 entries containing crowd-sourced sentiment assessments of tweets mentioning different brands and products. Each record includes the original tweet, a sentiment label (positive, negative, or neutral), and, when relevant, the specific brand or product associated with the sentiment. Annotators evaluated not only whether a sentiment was present but also its intended target, making this dataset a valuable resource for studying public perception, brand engagement, and emotional tone on social media.
 
 ---
 
 ## 📂 Data Preprocessing  
-Steps taken include:  
-- Filling missing product references with `"NoProduct"`.  
-- Tokenizing tweets and converting to lowercase.  
-- Removing punctuation, stopwords, and applying stemming.  
-- Handling class imbalance with resampling.  
+Missing Values; Filled missing product references with a placeholder token ("No_Target") & Dropped rows with empty tweets or missing sentiment labels
+Categorical Standardization; Unified sentiment labels into three categories: positive, negative, neutral 
+Text Cleaning; Converted all tweet text to lowercase & Removed URLs, mentions (@user), hashtags, numbers, and special characters
+Tokenization & Stopword Removal; Split cleaned text into tokens & Removed common stopwords to reduce noise.
+Feature Transformation; Applied TF-IDF vectorization to convert text into numerical features for model training.   
 
 ---
 
 ## 🤖 Modeling Approach  
-- Baseline models: Logistic Regression, Naïve Bayes, Random Forest.  
-- Advanced models: LSTM and Transformers (BERT).  
+- Baseline models: Logistic Regression, Naïve Bayes, Support Vector Machine(SVM).  
 - Evaluation metrics: Accuracy, Precision, Recall, F1-score.  
 - Best-performing model selected for business insights.  
 
