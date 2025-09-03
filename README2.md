@@ -75,6 +75,8 @@ Feature Transformation; Applied TF-IDF vectorization to convert text into numeri
    ```bash
    jupyter notebook index.ipynb
    ```
+4. Tableau Link
+https://public.tableau.com/app/profile/agnes.chomba/viz/FROMTWEETSTOSTRATEGYPREDICTINGSENTIMENTANDSHAPINGCUSTOMERENGAGEMENT/Dashboard1?publish=yes 
 
 ---
 
