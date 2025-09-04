@@ -81,6 +81,7 @@ https://public.tableau.com/app/profile/agnes.chomba/viz/FROMTWEETSTOSTRATEGYPRED
 ---
 
 ## 📌 Next Steps  
-- Deploy best-performing sentiment model as a web API.  
-- Extend analysis to other tech brands.  
 - Automate real-time monitoring of tweets for brand health tracking.  
+- Extend analysis to other tech brands.
+- Deploy best-performing sentiment model as a web API.    
+
