@@ -1,2 +1,14 @@
 streamlit==1.36.0
 joblib==1.3.2
+# Core ML + NLP
+scikit-learn==1.3.2
+joblib==1.3.2
+pandas==2.1.4
+
+# App
+streamlit==1.37.0
+
+# Optional (if you also plan to use FastAPI backend)
+fastapi==0.110.0
+uvicorn==0.27.1
+requests==2.31.0
